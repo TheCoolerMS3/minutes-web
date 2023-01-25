@@ -4,25 +4,57 @@
     src: url('fonts/Gilroy-Bold.ttf'); /* IE9 Compat Modes  */
 }
 
-
-body {
-    background-image: url(/img/bg.png);
+.topnav {
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
-.bar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 5%;
-    width: 25%;
-    height: 100%;
-    padding: 30px;
-    box-shadow: 0px 0px 50 rgba(0, 0, 0, 0.5);
+.navlinks {
+    top: 50%;
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
 }
 
+.header {
+    padding: 60px;
+    background-image: url(../img/bg.png);
+    background-size:cover;
+    background-position: center;
+    height: fit-content;
+}
 
-.bar > * {
-    margin-bottom: 25px;
+.header > * {
+    color: white;
+    font-size: x-large;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.header a:visited {
+    color: rgb(188, 211, 255);
+}
+
+.contents > * {
+    margin: 2%;
+}
+
+.socials {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+.socials > * {
+    margin: 10px;
+}
+
+.redirect-icon {
+    height: 12px;
 }
 
 h1 {
@@ -43,17 +75,6 @@ h1 {
     flex-direction: column;
 }
 
-a.side-link {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: large;
-    color: white;
-}
-
-a.side-link:visited {
-    color: rgb(188, 211, 255);
-}
-
 .side > p {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -66,15 +87,6 @@ a.side-link:visited {
     margin: 5px;
 }
 
-.socials {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-}
-
-.socials > * {
-    margin: 10px;
-}
 
 p, li {
     font-family: 'Inter';
@@ -85,8 +97,7 @@ p, li {
 
 .friends {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .friends > * {
@@ -97,7 +108,12 @@ a {
     font-family: 'Poppins';
     font-weight: 300;
     color: #646464;
-    text-align: justify;
+    text-align: center;
+}
+
+a.side-link {
+    color: #e3f7ff;
+    text-align: center;
 }
 
 a.friend {
@@ -108,6 +124,20 @@ a:visited {
     color: #00a3ff;
 }
 
+a.tab {
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #353535;
+    text-align: justify;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+a.tab:hover {
+    color: #2e79a5;
+    transition-duration: 0.5s;
+}
+
 a.tab-sel {
     font-family: 'Poppins';
     font-weight: 500;
@@ -116,29 +146,21 @@ a.tab-sel {
     text-decoration: none;
 }
 
-a.tab {
-    font-family: 'Poppins';
-    font-weight: 300;
-    color: #353535;
-    text-align: justify;
-    text-decoration: none;
-}
-
-.friend-pic {
+.friend-pic-set {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.friend-pic > img {
+.friend-pic {
     width: 50px;
     height: 50px;
     display: block;
 }
 
-.text-group > * {
-    margin-bottom: 5px;
+.friend-pic-set > a {
+    justify-items: center;
 }
 
 .tab-bar {
