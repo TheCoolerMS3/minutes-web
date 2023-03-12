@@ -107,7 +107,7 @@ p, li {
 a {
     font-family: 'Poppins';
     font-weight: 300;
-    color: #646464;
+    color: #00a3ff;
     text-align: center;
 }
 
@@ -121,7 +121,7 @@ a.friend {
 }
 
 a:visited {
-    color: #00a3ff;
+    color: #646464;
 }
 
 a.tab {
